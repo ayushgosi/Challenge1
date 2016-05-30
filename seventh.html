@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Leap Year</title>
+  </head>
+  <body>
+    <script>
+      var year = prompt("Enter the year:");
+
+      document.write("The next 100 leap years after " + year + " are : </br>");
+
+      var i = year;
+      var count = 0;
+
+      while (count <= 100)
+      {
+
+        if(i % 400 == 0)
+        {
+          document.write(i + ",\t");
+          count++ ;
+        }
+
+        else if (i % 4 == 0)
+        {
+          if (i % 100 == 0){}
+
+          else
+          {
+            document.write(i + ",\t");
+            count++;
+          }
+        }
+      i++;
+      }
+
+    </script>
+  </body>
+</html>
